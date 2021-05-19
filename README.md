@@ -7,7 +7,7 @@ https://www.udemy.com/share/102JgoCEQTdl9aTHw=/
 
 
 The default purpose of the app was a workout app that functions linearly  so i decided to add functionalities of my own
-to make the app more customizable and to fit my satisfaction of what an workout app should be like ;)
+to make the app more customizable and to fit my satisfaction of what a workout app should be like ;)
 
 The Functionalities Added are:
 
