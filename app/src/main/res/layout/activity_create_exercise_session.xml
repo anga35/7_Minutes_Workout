@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateExerciseSession"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_sessionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Session"
+        android:layout_marginTop="10dp"
+        android:textSize="24dp"
+        android:textColor="#1B1B1B"
+        android:textStyle="bold"
+       android:fontFamily="@font/roboto_medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        ></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LayoutTxt_sessionName"
+ android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_sessionName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/app_green"
+        app:hintTextColor="@color/app_green"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editText_sessionName"
+android:hint="Session Name:"
+            android:textAlignment="center"
+            ></androidx.appcompat.widget.AppCompatEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/rv_addSessionList"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LayoutTxt_sessionName"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_create_exerciseList"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+
+app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintBottom_toTopOf="@id/btn_doneCreate"
+
+
+        ></androidx.viewpager.widget.ViewPager>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+
+android:id="@+id/btn_doneCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_green"
+        android:text="Done"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        ></androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
